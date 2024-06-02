@@ -1,4 +1,4 @@
-import React, {Component, createContext, useState} from "react";
+import React, {Component, createContext, useEffect, useState} from "react";
 
 export const UserContext = createContext();
 const UserContextProvider = (props) =>{
@@ -37,21 +37,27 @@ const UserContextProvider = (props) =>{
     });
     
 
-     const setUser = (username, email, password, checkPassword) => {
+     const addUser = (username, email, password) => {
         
     }
     const setBoughtPattern = (username, patternId) => {
             let foundUser = users.find(user => user.username === username);
             foundUser.boughtPatterns.push(patternId);
     }
-    const getUser = (username, password) => {
+    const setUser = (username, password) => {
         let foundUser = users.find(user => user.username === username && user.password === password);
         if(foundUser != undefined){
+            console.log("user found", foundUser);
             setMyUser(foundUser);
+
+            return true;
+        }else{
+            return false;
         }
     }
+
     return(
-        <UserContext.Provider value={{ users, myUser, setUser, setBoughtPattern, getUser}}>
+        <UserContext.Provider value={{ users, myUser, addUser, setBoughtPattern, setUser}}>
             {props.children}
         </UserContext.Provider>
     );

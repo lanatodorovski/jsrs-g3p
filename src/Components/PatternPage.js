@@ -13,12 +13,15 @@ const PatternPage = ({pattern, addComment})=> {
     const loadButton = () =>{
         if(myUser.id !== 0 && isBought){
             return <div>
-                    <button download={pattern.pdf}>Download pattern PDF</button>
+                    <a href={pattern.pdf} download>
+                    <button>Download pattern PDF</button>
+                    </a>
+                   
                 </div>
         }else{
-                return <div>
-                        <button onClick={buyPatternButton}>Buy pattern</button>
-                    </div>
+            return <div>
+                    <button onClick={buyPatternButton}>Buy pattern</button>
+                </div>
         }
     }
 
@@ -27,7 +30,7 @@ const PatternPage = ({pattern, addComment})=> {
             alert("You are not assigned an account. Register or log in to buy products.");
         }else{
             setBoughtPattern(myUser.username, pattern.id);
-            isBought = true;
+            setIsBought(true);
         }
     }
         return(

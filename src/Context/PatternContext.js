@@ -1,6 +1,7 @@
 import React , {Component, createContext, useState} from "react";
 import SimpleCoasterPattern from "../PDF/Simple-Coaster-Pattern.pdf";
 import SimpleCoasterImage from "../Images/coaster.jpg";
+import DishclothImage from "../Images/dishcloth.jpg";
 
 export const PatternContext = createContext();
 
@@ -20,7 +21,7 @@ class PatternContextProvider extends Component{
             name: "Easy Dishcloth",
             description: "A straightforward dishcloth pattern suitable for beginners. This pattern alternates between single and double crochet stitches, creating a textured and absorbent fabric. It's an excellent project for practicing stitch transitions and makes a practical addition to any kitchen.",
             pdf: SimpleCoasterPattern,
-            image: SimpleCoasterImage,
+            image: DishclothImage,
             price: 2.49,
             comments: []
         },

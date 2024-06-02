@@ -1,0 +1,63 @@
+.Login img{
+    height: 14px;
+}
+.Login{
+    background-color: #B8B8FF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    height: 200px;
+    margin: 70px auto 0 auto;
+    border-radius: 10px;
+    
+}
+.Login input{
+    display: inline-block;
+    border: 1px solid  #9381FF;
+    border-radius: 5px;
+}
+
+.Login button{
+    background-color: #F8F7FF;
+    border: 0;
+    color: #9381FF;
+}
+label{
+    color: #F8F7FF;
+    margin-top: 15px;
+}
+label:nth-child(1){
+    margin: 0;
+}
+#submit{
+    margin-top: 10px;
+    padding: 7px 20px;
+    border-radius: 6px;
+    background-color: #9381FF;
+    color: #F8F7FF ;
+}
+#submit:hover{
+    background-color: #F8F7FF;
+    color: #9381FF;
+    transition: 0.2s;
+}
+
+
+.password button{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.password input{
+    border: 0px solid black;
+    border-radius: 0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.password{
+    display: flex;
+    align-items: stretch;
+    border: 1px solid  #9381FF;
+    border-radius: 5px;
+}

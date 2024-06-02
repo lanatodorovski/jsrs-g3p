@@ -1,8 +1,9 @@
 import { useContext } from "react";
-import { PatternContext } from "../Context/PatternContext";
-import PatternCard from "./PatternCard";
+import { PatternContext } from "../../Context/PatternContext.js";
 import { Route, Routes} from "react-router-dom";
-import PatternPage from "./PatternPage";
+import PatternPage from "../PatternPage.js";
+import PatternCard from "../PatternCard/PatternCard.js";
+import "./Patterns.css";
 
 const Patterns = () => {
     const { patterns, addComment} = useContext(PatternContext);

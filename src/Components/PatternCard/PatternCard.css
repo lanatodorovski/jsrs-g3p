@@ -1,0 +1,13 @@
+.PatternCard{
+    text-decoration: none;
+    background-color: #B8B8FF;
+    width: 320px;
+    height: 400px;
+    border-radius: 15px;
+
+    color:#F8F7FF;
+}
+
+.PatternCard img{
+    height: 200px;
+}
