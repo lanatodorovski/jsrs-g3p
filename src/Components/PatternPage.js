@@ -21,6 +21,7 @@ const PatternPage = ({pattern, addComment})=> {
         }else{
             return <div>
                     <button onClick={buyPatternButton}>Buy pattern</button>
+                    <span>{pattern.price}€</span>
                 </div>
         }
     }

@@ -8,6 +8,7 @@ import Header from './Components/Header';
 import Login from './Components/Login/Login';
 import Register from './Components/Register';
 import { useState } from 'react';
+import UserPage from './Components/UserPage/UserPage';
 
 
 
@@ -25,6 +26,7 @@ const App = () => {
             <Route path='/patterns/*' element={<Patterns/>} />
             <Route path="/login" element={<Login setIsLoggedIn={setIsLoggedIn}/>}/>
             <Route path="/register" element={<Register/>}/>
+            <Route path='/user' element={<UserPage/>}/>
           </Routes>
         </BrowserRouter>
         

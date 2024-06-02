@@ -15,7 +15,7 @@ const Nav = ({isLoggedIn}) => {
             </div >
 
             {isLoggedIn &&
-            <Link id="icon"><span>{myUser.username}</span><img src={Icon}/></Link>}
+            <Link id="icon" to="/user"><span>{myUser.username}</span><img src={Icon}/></Link>}
 
             { !isLoggedIn && 
                 <div>

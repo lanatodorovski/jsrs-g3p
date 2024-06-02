@@ -10,8 +10,8 @@ const PatternCard = ({pattern}) => {
                 <img src={pattern.image}/>
             </div>
             <div>
-                <span>{pattern.name}</span>
-                <span>{pattern.price}</span>
+                <h2>{pattern.name}</h2>
+                <span>{pattern.price}€</span>
             </div>
         
         </Link>

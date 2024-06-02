@@ -9,7 +9,7 @@ const UserContextProvider = (props) =>{
                 username: "new_user",
                 email: "new.user@gmail.com",
                 password: "newuser123",
-                boughtPatterns:[]
+                boughtPatterns:[1]
             },
             {
                 id: 2,
@@ -23,7 +23,7 @@ const UserContextProvider = (props) =>{
                 username: "uusseerr",
                 email: "uusseerr@gmail.com",
                 password: "uusseerr1234",
-                boughtPatterns: []
+                boughtPatterns: [2,3]
             }
         ]
     );

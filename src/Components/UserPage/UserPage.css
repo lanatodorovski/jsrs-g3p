@@ -1,0 +1,54 @@
+.UserPage #user-details{
+    background-color: #9381FF;
+    width: 500px;
+    height: 90vh;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+   
+    align-items: stretch;
+    padding: 0 100px;
+    gap: 30px;
+    font-size:x-large;
+    padding-top: 60px;
+    color: #F8F7FF ;
+}
+.UserPage{
+    display: flex;
+    gap: 30px;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+
+.UserPage #user-details img{
+    height: 300px;
+    border-radius: 200px;
+    align-self: center;
+    margin-bottom: 30px;
+}
+
+.UserPage #bought-patterns > div{
+    background-color: #FFC082;
+    height: 83vh;
+    border-radius: 15px;
+  
+    display: flex;
+    box-sizing: border-box;
+    width: 65vw;
+    padding: 30px;
+    gap: 30px;
+    flex-wrap:wrap;
+
+}
+
+.UserPage #bought-patterns > h1{
+    color:#FFC082; 
+    font-size: xxx-large;
+}
+
+.UserPage .PatternCard{
+    background-color: #FFDCB9 ;
+    color: #F8F7FF;
+}

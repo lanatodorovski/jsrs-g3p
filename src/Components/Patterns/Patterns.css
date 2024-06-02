@@ -3,5 +3,10 @@
     flex-wrap: wrap;
     gap: 30px;
     
-    justify-content: space-between
+    justify-content: center;
+}
+
+.Patterns .PatternCard{
+    background-color: #B8B8FF;
+    color:#F8F7FF;
 }
