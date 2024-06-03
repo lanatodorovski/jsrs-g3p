@@ -15,9 +15,15 @@ body{
 }
 .Login{
   padding:70px 50px 0 50px; 
-  margin-top: 50px;
+  margin-top: 70px;
+}
+.Register{
+  margin: 70px;
 }
 .UserPage{
   padding:70px 50px 0 50px; 
 }
 
+.PatternPage{
+  padding:70px 50px 0 50px; 
+}

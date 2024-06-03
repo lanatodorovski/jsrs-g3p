@@ -1,0 +1,29 @@
+.CommentSection{
+    margin: 0 auto;
+    background-color: #B8B8FF ;
+    width: 80vw;
+    margin-top: 60px;
+    border-radius: 30px;
+    box-sizing: border-box;
+    padding: 40px 60px;
+}
+
+.CommentSection input{
+    width: 300px;
+    height: 25px;
+    border: 0;
+    border-radius: 5px;
+}
+
+.CommentSection form button{
+    border: 0;
+    background-color: #FFC082;
+    color:#F8F7FF;
+    padding: 5px 10px;
+    border-radius: 5px
+}
+
+.CommentSection form button:hover{
+    background-color: #ff9b36;
+}
+

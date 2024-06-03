@@ -37,12 +37,20 @@ const UserContextProvider = (props) =>{
     });
     
 
-     const addUser = (username, email, password) => {
-        
+     const addUser = (username_, email_, password_) => {
+        if(users.find(user => user.username == username_) == undefined && users.find(user => user.email == email_) == undefined){
+            setUsers(prevArr=>[...prevArr, { id: users.length + 1, username: username_, email: email_, password: password_, boughtPatterns: []}]);
+            return true;
+        }else{
+            return false;
+            
+        }
     }
     const setBoughtPattern = (username, patternId) => {
             let foundUser = users.find(user => user.username === username);
-            foundUser.boughtPatterns.push(patternId);
+            if(!foundUser.boughtPatterns.includes(patternId)){
+                foundUser.boughtPatterns.push(patternId);
+            }      
     }
     const setUser = (username, password) => {
         let foundUser = users.find(user => user.username === username && user.password === password);
@@ -55,7 +63,12 @@ const UserContextProvider = (props) =>{
             return false;
         }
     }
-
+    useEffect(()=>{
+        if(users.length > 3){
+            const addedUser = users.find(user => user.id == users.length);
+            setMyUser(addedUser);
+        }
+    },[users]);
     return(
         <UserContext.Provider value={{ users, myUser, addUser, setBoughtPattern, setUser}}>
             {props.children}

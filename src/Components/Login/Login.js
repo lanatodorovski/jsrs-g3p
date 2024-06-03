@@ -3,9 +3,9 @@ import View from "../../Images/view.png";
 import Hide from "../../Images/hide.png";
 import "./Login.css";
 import { UserContext } from "../../Context/UserContext";
-import { Link, redirect, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
-const Login = ({setIsLoggedIn}) => {
+const Login = ({setIsLoggedIn, isLoggedIn}) => {
     const navigate = useNavigate();
     const username = useRef(null);
     const password = useRef(null);
@@ -33,7 +33,7 @@ const Login = ({setIsLoggedIn}) => {
         }else{
             setPasswordVisibleImage(View);
         }
-    },[togglePasswordVisible])
+    },[togglePasswordVisible]);
     return(
         <form className="Login" onSubmit={handleDefault}>
             <label for="username" >Username:</label>
