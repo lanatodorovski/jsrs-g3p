@@ -6,10 +6,10 @@ import { useNavigate } from "react-router-dom";
 import "./CommentSection.css";
 
 const CommentSection = ({pattern}) => {
-    const navigate = useNavigate();
     const commentInput = useRef(null);
-    const {addComment} = useContext(PatternContext);
     const {myUser, users} = useContext(UserContext);
+    const navigate = useNavigate();
+    const {addComment} = useContext(PatternContext);
 
     const handleDefault = (event) => {
         event.preventDefault();

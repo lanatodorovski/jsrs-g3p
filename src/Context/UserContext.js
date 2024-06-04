@@ -46,12 +46,6 @@ const UserContextProvider = (props) =>{
             
         }
     }
-    const setBoughtPattern = (username, patternId) => {
-            let foundUser = users.find(user => user.username === username);
-            if(!foundUser.boughtPatterns.includes(patternId)){
-                foundUser.boughtPatterns.push(patternId);
-            }      
-    }
     const setUser = (username, password) => {
         let foundUser = users.find(user => user.username === username && user.password === password);
         if(foundUser != undefined){
@@ -62,6 +56,12 @@ const UserContextProvider = (props) =>{
         }else{
             return false;
         }
+    }
+    const setBoughtPattern = (username, patternId) => {
+            let foundUser = users.find(user => user.username === username);
+            if(!foundUser.boughtPatterns.includes(patternId)){
+                foundUser.boughtPatterns.push(patternId);
+            }      
     }
     useEffect(()=>{
         if(users.length > 3){

@@ -6,19 +6,19 @@ import Hide from "../../Images/hide.png";
 import { UserContext } from "../../Context/UserContext";
 
 const Register = ({setIsLoggedIn}) => {
-    const navigate = useNavigate();
     const username = useRef(null);
     const email = useRef(null);
     const password = useRef(null);
     const passwordRepeat = useRef(null);
-
-    const {addUser} = useContext(UserContext);
 
     const [togglePasswordVisible, setTogglePasswordVisible] = useState(false);
     const [togglePasswordRepeatVisible, setTogglePasswordRepeatVisible] = useState(false);
 
     const [passwordVisibleImage, setPasswordVisibleImage]= useState(Hide);
     const [passwordVisibleRepeatImage, setPasswordVisibleRepeatImage]= useState(Hide);
+
+    const navigate = useNavigate();
+    const {addUser} = useContext(UserContext);
 
     const handleDefault = (event) => {
         event.preventDefault();
@@ -42,7 +42,7 @@ const Register = ({setIsLoggedIn}) => {
     };
 
     useEffect(()=> {
-        if(togglePasswordVisible){
+        if(!togglePasswordVisible){
             setPasswordVisibleImage(View);
         }else{
             setPasswordVisibleImage(Hide);
@@ -50,7 +50,7 @@ const Register = ({setIsLoggedIn}) => {
     }, [togglePasswordVisible]);
 
     useEffect(()=> {
-        if(togglePasswordRepeatVisible){
+        if(!togglePasswordRepeatVisible){
             setPasswordVisibleRepeatImage(View);
         }else{
             setPasswordVisibleRepeatImage(Hide);
