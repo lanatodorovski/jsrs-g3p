@@ -20,6 +20,7 @@
     gap: 30px;
     align-items: flex-end;
     justify-content: space-around;
+    margin-bottom: 40px;
 }
 
 .UserPage #user-details img{
@@ -52,3 +53,17 @@
     background-color: #FFDCB9 ;
     color: #F8F7FF;
 }
+
+.UserPage button{
+    border: 0;
+    background-color: #FFC082;
+    color:#F8F7FF;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 25px;
+}
+
+.UserPage button:hover{
+    background-color: #ff9b36;
+}
+

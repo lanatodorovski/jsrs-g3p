@@ -1,0 +1,32 @@
+.Footer{
+    background-color:  #B8B8FF;
+    color: #9381FF;
+    font-size: smaller;
+}
+
+.Footer a{
+    color: #9381FF;
+    text-decoration: none;
+}
+.Footer a:hover{
+    text-decoration: underline;
+}
+
+.Footer{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 50px 80px;
+}
+.Footer h2{
+    font-size: x-large;
+}
+.Footer > div {
+    display: flex;
+    justify-content: space-between; 
+}
+
+.Footer .block{
+    display: flex;
+    flex-direction: column;
+}

@@ -5,7 +5,7 @@ import "./Login.css";
 import { UserContext } from "../../Context/UserContext";
 import { useNavigate } from "react-router-dom";
 
-const Login = ({setIsLoggedIn, isLoggedIn}) => {
+const Login = ({setIsLoggedIn}) => {
     const navigate = useNavigate();
     const username = useRef(null);
     const password = useRef(null);

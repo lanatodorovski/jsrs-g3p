@@ -9,6 +9,7 @@ import Login from './Components/Login/Login';
 import Register from './Components/Register/Register.js';
 import { useEffect, useState } from 'react';
 import UserPage from './Components/UserPage/UserPage';
+import Footer from './Components/Footer/Footer.js';
 
 
 
@@ -26,8 +27,9 @@ const App = () => {
             <Route path='/patterns/*' element={<Patterns/>} />
             <Route path="/login" element={<Login setIsLoggedIn={setIsLoggedIn}/>}/>
             <Route path="/register" element={<Register setIsLoggedIn={setIsLoggedIn}/>}/>
-            <Route path='/user' element={<UserPage/>}/>
+            <Route path='/user' element={<UserPage setIsLoggedIn={setIsLoggedIn}/>}/>
           </Routes>
+          <Footer/>
         </BrowserRouter>
         
       </UserContextProvider>
